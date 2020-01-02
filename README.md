@@ -2,7 +2,7 @@
 
 ## Sort space usage by statement 
 ``` sql
-SELECT   S.sid || ',' || S.serial# sid_serial, S.username,
+SELECT   S.sid || ',' || S.serial# sid_serial, S.status, S.username,
 
 T.blocks * TBS.block_size / 1024 / 1024 mb_used, T.tablespace,
 
