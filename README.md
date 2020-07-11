@@ -61,3 +61,12 @@ BEGIN
 END;
 /
 ```
+## Oracle sql get top n for each group
+```sql
+select *
+from (select emp_id, name, occupation,
+      rank() over ( partition by occupation order by emp_id) rank
+      from employee)
+where rank <= 3
+```
+[get-top-results-for-each-group-in-oracle](https://stackoverflow.com/questions/134958/get-top-results-for-each-group-in-oracle)
