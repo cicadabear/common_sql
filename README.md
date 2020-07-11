@@ -1,4 +1,4 @@
-# oracle temp tablespace management
+# Oracle temp tablespace management
 
 ## Sort space usage by statement 
 ``` sql
